@@ -1,6 +1,9 @@
 package main
 
-import "net/http"
+import (
+	"encoding/json"
+	"net/http"
+)
 
 // Person ...
 type Person struct {
@@ -19,7 +22,9 @@ type Address struct {
 var people []Person
 
 // GetPeople ...
-func GetPeople(w http.ResponseWriter, r *http.Request) {}
+func GetPeople(w http.ResponseWriter, r *http.Request) {
+	json.NewEncoder(w).Encode(people)
+}
 
 // GetPerson ...
 func GetPerson(w http.ResponseWriter, r *http.Request) {}
