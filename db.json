@@ -1,0 +1,168 @@
+{
+  "beatmaps": [
+    {
+      "approved": "123",
+      "approved_date": "json-123",
+      "last_update": "json-123",
+      "artist": "json-123",
+      "beatmap_id": "json-123",
+      "bpm": "json-123",
+      "creator": "json-123",
+      "difficultyrating": "json-123",
+      "diff_size": "json-123",
+      "diff_overall": "json-123",
+      "diff_approach": "json-123",
+      "diff_drain": "json-123",
+      "hit_length": "json-123",
+      "source": "json-123",
+      "genre_id": "json-123",
+      "language_id": "json-123",
+      "title": "json-123",
+      "total_length": "json-123",
+      "version": "json-123",
+      "file_md5": "json-123",
+      "mode": "json-123",
+      "tags": "json-123",
+      "favourite_count": "json-123",
+      "playcount": "json-123",
+      "passcount": "json-123",
+      "max_combo": "json-123"
+    }
+  ],
+  "matches": [
+    {
+      "match": {
+        "match_match_id": "typicode",
+        "match_name": "typicode",
+        "match_start_time": "typicode",
+        "match_end_time": null
+      },
+      "games": [
+        {
+          "game_id": "owo",
+          "start_time": "owo",
+          "end_time": "owo",
+          "beatmap_id": "owo",
+          "play_mode": "owo",
+          "match_type": "owo",
+          "scoring_type": "owo",
+          "team_type": "owo",
+          "mods": "owo",
+          "games_scores": [
+            {
+              "slot": "owo",
+              "team": "owo",
+              "user_id": "owo",
+              "score": "owo",
+              "maxcombo": "owo",
+              "rank": "null",
+              "count50": "owo",
+              "count100": "owo",
+              "count300": "owo",
+              "countmiss": "owo",
+              "countgeki": "owo",
+              "countkatu": "owo",
+              "perfect": "owo",
+              "pass": "owo"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "replays": [
+    {
+      "content": "typicode",
+      "encoding": "typicode"
+    }
+  ],
+  "scores": [
+    {
+      "score_id": "typicode",
+      "score": "typicode",
+      "count300": "typicode",
+      "count100": "typicode",
+      "count50": "typicode",
+      "countmiss": "typicode",
+      "maxcombo": "typicode",
+      "countkatu": "typicode",
+      "countgeki": "typicode",
+      "perfect": "typicode",
+      "enabled_mods": "typicode",
+      "user_id": "typicode",
+      "date": "typicode",
+      "rank": "typicode",
+      "pp": "typicode",
+      "username": "typicode"
+    }
+  ],
+  "user_bests": [
+    {
+      "beatmap_id": "typicode",
+      "score": "typicode",
+      "count300": "typicode",
+      "count100": "typicode",
+      "count50": "typicode",
+      "countmiss": "typicode",
+      "maxcombo": "typicode",
+      "countkatu": "typicode",
+      "countgeki": "typicode",
+      "perfect": "typicode",
+      "enabled_mods": "typicode",
+      "user_id": "typicode",
+      "date": "typicode",
+      "rank": "typicode",
+      "pp": "typicode"
+    }
+  ],
+  "user_recents": [
+    {
+      "beatmap_id": "typicode",
+      "score": "typicode",
+      "count300": "typicode",
+      "count100": "typicode",
+      "count50": "typicode",
+      "countmiss": "typicode",
+      "maxcombo": "typicode",
+      "countkatu": "typicode",
+      "countgeki": "typicode",
+      "perfect": "typicode",
+      "enabled_mods": "typicode",
+      "user_id": "typicode",
+      "date": "typicode",
+      "rank": "typicode"
+    }
+  ],
+  "users": [
+    {
+      "user_id": "typicode",
+      "username": "typicode",
+      "count300": "typicode",
+      "count100": "typicode",
+      "count50": "typicode",
+      "playcount": "typicode",
+      "ranked_score": "typicode",
+      "total_score": "typicode",
+      "pp_rank": "typicode",
+      "level": "typicode",
+      "pp_raw": "typicode",
+      "accuracy": "typicode",
+      "count_rank_ss": "typicode",
+      "count_rank_ssh": "typicode",
+      "count_rank_s": "typicode",
+      "count_rank_sh": "typicode",
+      "count_rank_a": "typicode",
+      "country": "typicode",
+      "pp_country_rank": "typicode",
+      "events": [
+        {
+          "display_html": "wow",
+          "beatmap_id": "wow",
+          "beatmapset_id": "some comment",
+          "date": "some comment",
+          "epicfactor": "wow"
+        }
+      ]
+    }
+  ]
+}
