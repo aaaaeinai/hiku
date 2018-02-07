@@ -3,14 +3,13 @@ export class Match {
         private match_match_id: string,
         private match_name: string,
         private match_start_time: string,
-        private match_end_time: null,
-
+        
         // not supported yet - always null
-        private games: Games[]
+        private match_end_time: null
     ) { }
 }
 
-export class Games {
+export class Game {
     constructor(
         private game_id: string,
         private start_time: string,
@@ -32,11 +31,11 @@ export class Games {
         // global mods, see reference below
         private mods: string,
 
-        private games_scores: GamesScores[]
+        private games_scores: GamesScore[]
     ) { }
 }
 
-export class GamesScores {
+export class GamesScore {
     constructor(
         // 0 based index of player's slot
         private slot: string,

@@ -1,7 +1,7 @@
 export class Beatmap {
     constructor(
         // 4 = loved, 3 = qualified, 2 = approved, 1 = ranked, 0 = pending, -1 = WIP, -2 = graveyard
-        private approved: number,
+        private approved: string,
 
         // date ranked, UTC+8 for now
         private approved_date: string,
@@ -17,7 +17,7 @@ export class Beatmap {
         // beatmapset_id groups difficulties into a set
         private beatmapset_id: string,
 
-        private bpm: number,
+        private bpm: string,
         private creator: string,
 
         // The amount of stars the map would have ingame and on the website

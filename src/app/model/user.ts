@@ -1,6 +1,4 @@
-import { Events } from "./events";
-
-export class Users {
+export class User {
     constructor(
         private user_id: string,
         private username: string,
@@ -39,6 +37,18 @@ export class Users {
         private pp_country_rank: string,
 
         // Contains events for this user
-        private events: Events[]
+        private events: Event[]
+    ) {}
+}
+
+export class Event {
+    constructor(
+        private display_html: string,
+        private beatmap_id: string,
+        private beatmapset_id: string,
+        private date: string,
+
+        // How "epic" this event is (between 1 and 32)
+        private epicfactor: string
     ) {}
 }
