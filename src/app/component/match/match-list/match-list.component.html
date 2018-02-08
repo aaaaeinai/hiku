@@ -1,0 +1,44 @@
+<h2>Match List</h2>
+
+<p>Form value:
+    <code>{{ matchList | json }}</code>
+</p>
+
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th scope="col">match_match_id</th>
+            <th scope="col">match_name</th>
+            <th scope="col">match_start_time</th>
+            <th scope="col">match_end_time</th>
+            <th scope="col">|</th>
+            <th scope="col">game_id</th>
+            <th scope="col">start_time</th>
+            <th scope="col">end_time</th>
+            <th scope="col">beatmap_id</th>
+            <th scope="col">play_mode</th>
+            <th scope="col">match_type</th>
+            <th scope="col">scoring_type</th>
+            <th scope="col">team_type</th>
+            <th scope="col">mods</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let element of matchList">
+            <td>{{ element.match.match_match_id }}</td>
+            <td>{{ element.match.match_name }}</td>
+            <td>{{ element.match.match_start_time }}</td>
+            <td>{{ element.match.match_end_time }}</td>
+            <td>|</td>
+            <td>{{ element.games[0].game_id }}</td>
+            <td>{{ element.games[0].start_time }}</td>
+            <td>{{ element.games[0].end_time }}</td>
+            <td>{{ element.games[0].beatmap_id }}</td>
+            <td>{{ element.games[0].play_mode }}</td>
+            <td>{{ element.games[0].match_type }}</td>
+            <td>{{ element.games[0].scoring_type }}</td>
+            <td>{{ element.games[0].team_type }}</td>
+            <td>{{ element.games[0].mods }}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,90 @@
+<h2>Beatmap Detail</h2>
+<h3><i>FormControl in a FormGroup</i></h3>
+<form [formGroup]="beatmapForm" novalidate>
+  <div class="form-group">
+    <label class="center-block">approved:
+      <input class="form-control" formControlName="approved">
+    </label>
+    <label class="center-block">approved_date:
+      <input class="form-control" formControlName="approved_date">
+    </label>
+    <label class="center-block">last_update:
+      <input class="form-control" formControlName="last_update">
+    </label>
+    <label class="center-block">artist:
+      <input class="form-control" formControlName="artist">
+    </label>
+    <label class="center-block">beatmap_id:
+      <input class="form-control" formControlName="beatmap_id">
+    </label>
+    <label class="center-block">beatmapset_id:
+      <input class="form-control" formControlName="beatmapset_id">
+    </label>
+    <label class="center-block">bpm:
+      <input class="form-control" formControlName="bpm">
+    </label>
+    <label class="center-block">creator:
+      <input class="form-control" formControlName="creator">
+    </label>
+    <label class="center-block">difficultyrating:
+      <input class="form-control" formControlName="difficultyrating">
+    </label>
+    <label class="center-block">diff_size:
+      <input class="form-control" formControlName="diff_size">
+    </label>
+    <label class="center-block">diff_overall:
+      <input class="form-control" formControlName="diff_overall">
+    </label>
+    <label class="center-block">diff_approach:
+      <input class="form-control" formControlName="diff_approach">
+    </label>
+    <label class="center-block">diff_drain:
+      <input class="form-control" formControlName="diff_drain">
+    </label>
+    <label class="center-block">hit_length:
+      <input class="form-control" formControlName="hit_length">
+    </label>
+    <label class="center-block">source:
+      <input class="form-control" formControlName="source">
+    </label>
+    <label class="center-block">genre_id:
+      <input class="form-control" formControlName="genre_id">
+    </label>
+    <label class="center-block">language_id:
+      <input class="form-control" formControlName="language_id">
+    </label>
+    <label class="center-block">title:
+      <input class="form-control" formControlName="title">
+    </label>
+    <label class="center-block">total_length:
+      <input class="form-control" formControlName="total_length">
+    </label>
+    <label class="center-block">version:
+      <input class="form-control" formControlName="version">
+    </label>
+    <label class="center-block">file_md5:
+      <input class="form-control" formControlName="file_md5">
+    </label>
+    <label class="center-block">mode:
+      <input class="form-control" formControlName="mode">
+    </label>
+    <label class="center-block">tags:
+      <input class="form-control" formControlName="tags">
+    </label>
+    <label class="center-block">favourite_count:
+      <input class="form-control" formControlName="favourite_count">
+    </label>
+    <label class="center-block">playcount:
+      <input class="form-control" formControlName="playcount">
+    </label>
+    <label class="center-block">passcount:
+      <input class="form-control" formControlName="passcount">
+    </label>
+    <label class="center-block">max_combo:
+      <input class="form-control" formControlName="max_combo">
+    </label>
+  </div>
+</form>
+
+<p>Form value: <code>{{ beatmapForm.value | json }}</code></p>
+<p>Form status: <code>{{ beatmapForm.status | json }}</code></p>
