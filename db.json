@@ -14540,6 +14540,45 @@
           ]
         }
       ]
+    },
+    {
+      "match": {
+        "match_match_id": "typicode",
+        "match_name": "typicode",
+        "match_start_time": "typicode",
+        "match_end_time": null
+      },
+      "games": [
+        {
+          "game_id": "owo",
+          "start_time": "owo",
+          "end_time": "owo",
+          "beatmap_id": "owo",
+          "play_mode": "owo",
+          "match_type": "owo",
+          "scoring_type": "owo",
+          "team_type": "owo",
+          "mods": "owo",
+          "games_scores": [
+            {
+              "slot": "owo",
+              "team": "owo",
+              "user_id": "owo",
+              "score": "owo",
+              "maxcombo": "owo",
+              "rank": "null",
+              "count50": "owo",
+              "count100": "owo",
+              "count300": "owo",
+              "countmiss": "owo",
+              "countgeki": "owo",
+              "countkatu": "owo",
+              "perfect": "owo",
+              "pass": "owo"
+            }
+          ]
+        }
+      ]
     }
   ],
   "replays": [
