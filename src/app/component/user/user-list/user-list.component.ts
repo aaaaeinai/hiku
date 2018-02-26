@@ -5,11 +5,9 @@ import { UsersService } from "../../../container/service/user.service";
 @Component({
     selector: 'app-user-list',
     template: `
-        <h2>User List</h2>
+        <h1 class="display-4 bd-title" id="content">User List</h1>
 
-        <p>Form value: <code>{{ userList | json }}</code></p>
-
-        <table class="table table-dark table-striped">
+        <table class="table table-responsive table-dark table-striped table-bordered table-hover">
         <thead>
             <tr>
                 <th scope="col">user_id</th>

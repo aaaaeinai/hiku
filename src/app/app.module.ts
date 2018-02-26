@@ -18,6 +18,8 @@ import { ScoreListComponent } from './component/score/score-list/score-list.comp
 import { UserListComponent } from './component/user/user-list/user-list.component';
 import { UserBestListComponent } from './component/user-best/user-best-list/user-best-list.component';
 import { UserRecentListComponent } from './component/user-recent/user-recent-list/user-recent-list.component';
+import { HeaderComponent } from './component/header/header.component';
+import { GameListComponent } from './component/match/game-list/game-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { UserRecentListComponent } from './component/user-recent/user-recent-lis
     ScoreListComponent,
     UserListComponent,
     UserBestListComponent,
-    UserRecentListComponent
+    UserRecentListComponent,
+    HeaderComponent,
+    GameListComponent
   ],
   imports: [
     BrowserModule,

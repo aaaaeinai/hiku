@@ -1,0 +1,30 @@
+<h1 class="display-4 bd-title" id="content">Game List of Match</h1>
+
+<table class="table table-responsive table-dark table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th scope="col">game_id</th>
+            <th scope="col">start_time</th>
+            <th scope="col">end_time</th>
+            <th scope="col">beatmap_id</th>
+            <th scope="col">play_mode</th>
+            <th scope="col">match_type</th>
+            <th scope="col">scoring_type</th>
+            <th scope="col">team_type</th>
+            <th scope="col">mods</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let element of gameList;let i = index">
+            <td>{{ element.game_id }}</td>
+            <td>{{ element.start_time }}</td>
+            <td>{{ element.end_time }}</td>
+            <td>{{ element.beatmap_id }}</td>
+            <td>{{ element.play_mode }}</td>
+            <td>{{ element.match_type }}</td>
+            <td>{{ element.scoring_type }}</td>
+            <td>{{ element.team_type }}</td>
+            <td>{{ element.mods }}</td>
+        </tr>
+    </tbody>
+</table>

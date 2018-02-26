@@ -5,11 +5,9 @@ import { UserRecentsService } from "../../../container/service/user-recent.servi
 @Component({
     selector: 'app-export-list',
     template: `
-        <h2>User Recent List</h2>
+        <h1 class="display-4 bd-title" id="content">User Recent List</h1>
 
-        <p>Form value: <code>{{ userRecentList | json }}</code></p>
-
-        <table class="table table-dark table-striped">
+        <table class="table table-responsive table-dark table-striped table-bordered table-hover">
         <thead>
             <tr>
                 <th scope="col">beatmap_id</th>

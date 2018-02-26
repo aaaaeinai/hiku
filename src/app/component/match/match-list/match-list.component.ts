@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { Match } from "../../../container/model/match";
+import { Match, Game } from "../../../container/model/match";
 import { MatchesService } from "../../../container/service/match.service";
 
 @Component({
@@ -8,11 +8,17 @@ import { MatchesService } from "../../../container/service/match.service";
 })
 export class MatchListComponent {
 
+    // matchList: { match: Match, games: Game[] }[]
     matchList: Match[]
-
+    
     constructor(
         private ms: MatchesService
     ) {
-        this.ms.getMatches(matchList => this.matchList = matchList)
+        this.ms.getMatches(m => this.matchList = m)
+    }
+
+    gotoGamesPage(index) {
+        alert(index)
+        console.log(index)
     }
 }

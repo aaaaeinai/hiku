@@ -1,22 +1,38 @@
-<h2>Beatmap List</h2>
+<h1 class="display-4 bd-title" id="content">Beatmap List</h1>
 
-<button class="btn btn-primary" routerLink="/match">ok</button>
+<div class="row">
 
-<!-- <p>Form value:
-    <code>{{ beatmapList | json }}</code>
-</p> -->
+    <div *ngFor="let element of beatmapList" class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card border-success" style="margin: 5px;">
+            <img class="card-img-top img-responsive" src="./../../../../assets/download.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ element.title }} - {{ element.artist }}</h5>
+                <p class="card-text">{{ element.creator }}</p>
+                <p class="card-text">{{ element.mode }}</p>
+            </div>
 
-<table class="table table-dark table-striped">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Difficulty Rating: {{ element.difficultyrating | number:'1.0-2' }}</li>
+                <li class="list-group-item">Playcount: {{ element.playcount }}, Passcount: {{ element.passcount }}</li>
+                <li class="list-group-item">Favourite Count: {{ element.favourite_count }}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div *ngFor="let element of beatmapList" class="col-sm-1 col-md-2 col-lg-4 col-xl-4">col</div>
+</div>
+
+<!-- <table class="table table-responsive table-dark table-striped table-bordered table-hover">
     <thead>
         <tr>
-            <!-- <th scope="col">Title</th>
-            <th scope="col">Artist</th>
+            <th scope="col">Title</th>
+            <th scope="col">Artist </th>
             <th scope="col">Creator</th>
             <th scope="col">Difficulty Rating</th>
             <th scope="col">Playcount</th>
             <th scope="col">Passcount</th>
             <th scope="col">Favourite Count</th> -->
-
+<!-- 
             <th scope="col">approved</th>
             <th scope="col">approved_date</th>
             <th scope="col">last_update</th>
@@ -42,20 +58,20 @@
             <th scope="col">tags</th>
             <th scope="col">favourite_count</th>
             <th scope="col">playcount</th>
-            <th scope="col">passcount</th>
-            <th scope="col">max_combo</th>
+            <th scope="col">passcount</th> -->
+<!-- <th scope="col">max_combo</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let element of beatmapList">
-            <!-- <td>{{ element.title }}</td>
+            <td>{{ element.title }}</td>
             <td>{{ element.artist }}</td>
             <td>{{ element.creator }}</td>
             <td>{{ element.difficultyrating | number:'1.0-2' }}</td>
             <td>{{ element.playcount }}</td>
             <td>{{ element.passcount }}</td>
             <td>{{ element.favourite_count }}</td> -->
-            
+<!-- 
             <td>{{ element.approved }}</td>
             <td>{{ element.approved_date }}</td>
             <td>{{ element.last_update }}</td>
@@ -81,8 +97,8 @@
             <td>{{ element.tags }}</td>
             <td>{{ element.favourite_count }}</td>
             <td>{{ element.playcount }}</td>
-            <td>{{ element.passcount }}</td>
-            <td>{{ element.max_combo }}</td>
+            <td>{{ element.passcount }}</td> -->
+<!-- <td>{{ element.max_combo }}</td>
         </tr>
     </tbody>
-</table>
+</table> -->
