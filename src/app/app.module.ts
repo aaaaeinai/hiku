@@ -20,6 +20,7 @@ import { UserRecentListComponent } from './component/user-recent/user-recent-lis
 import { HeaderComponent } from './component/header/header.component';
 import { GameListComponent } from './component/match/game-list/game-list.component';
 import { ScoresService } from './container/service/score.service';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ScoresService } from './container/service/score.service';
     UserBestListComponent,
     UserRecentListComponent,
     HeaderComponent,
-    GameListComponent
+    GameListComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
