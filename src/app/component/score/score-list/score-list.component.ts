@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { Score } from "../../../container/model/score";
-import { ScoresService } from "../../../container/service/score.component";
+import { ScoresService } from "../../../container/service/score.service";
 
 @Component({
     selector: 'app-score-list',

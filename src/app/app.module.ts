@@ -10,7 +10,6 @@ import { BeatmapListComponent } from './component/beatmap/beatmap-list/beatmap-l
 import { UsersService } from './container/service/user.service';
 import { UserRecentsService } from './container/service/user-recent.service';
 import { UserBestsService } from './container/service/user-best.service';
-import { ScoresService } from './container/service/score.component';
 import { MatchesService } from './container/service/match.service';
 import { BeatmapsService } from './container/service/beatmaps.service';
 import { MatchListComponent } from './component/match/match-list/match-list.component';
@@ -20,6 +19,7 @@ import { UserBestListComponent } from './component/user-best/user-best-list/user
 import { UserRecentListComponent } from './component/user-recent/user-recent-list/user-recent-list.component';
 import { HeaderComponent } from './component/header/header.component';
 import { GameListComponent } from './component/match/game-list/game-list.component';
+import { ScoresService } from './container/service/score.service';
 
 @NgModule({
   declarations: [
