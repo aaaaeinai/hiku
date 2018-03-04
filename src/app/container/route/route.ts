@@ -24,12 +24,10 @@ const appRoutes: Routes = [
     {
         path: 'match',
         component: MatchListComponent,
-        children: [
-            {
-                path: ':id/game',
-                component: GameListComponent
-            }
-        ]
+    },
+    {
+        path: 'match/:id/game',
+        component: GameListComponent,
     },
     {
         path: 'score',
