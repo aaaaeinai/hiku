@@ -8,17 +8,11 @@ import { MatchesService } from "../../../container/service/match.service";
 })
 export class MatchListComponent {
 
-    // matchList: { match: Match, games: Game[] }[]
     matchList: Match[]
     
     constructor(
         private ms: MatchesService
     ) {
         this.ms.getMatches(m => this.matchList = m)
-    }
-
-    gotoGamesPage(index) {
-        alert(index)
-        console.log(index)
     }
 }
