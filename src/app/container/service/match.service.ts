@@ -13,26 +13,13 @@ export class MatchesService {
         private http: HttpClient
     ) { }
 
-    getMatchesAndGames(data: (matches: { match: Match, games: Game[] }[]) => void) {
-        return this.http.get(OSU_API + MATCHES + '?k=' + KEY)
-            .subscribe(data)
-    }
-
     getMatches(data: (matches: Match[]) => void) {
         return this.http.get(OSU_API + MATCHES + '?k=' + KEY)
             .subscribe(data)
     }
 
-    // TODO: Games http logic goes here
-    getGames(games: Game[]) {
+    getGames(data: (matches: Match[]) => void) {
         return this.http.get(OSU_API + MATCHES + '?k=' + KEY)
-            .subscribe((data: Match[]) => {
-                data.forEach((match: Match) => {
-                    match["games"].forEach((matchGames: Game[]) => {
-                        this.results = data
-                        games = matchGames
-                    });
-                });
-            })
+            .subscribe(data)
     }
 }
