@@ -1,5 +1,7 @@
 # hiku
 
+[![Build Status](https://travis-ci.org/aaaaeinai/hiku.svg?branch=edge2)](https://travis-ci.org/aaaaeinai/hiku)
+
 pull up thot
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
