@@ -12,10 +12,11 @@
             <th scope="col">scoring_type</th>
             <th scope="col">team_type</th>
             <th scope="col">mods</th>
+            <th scope="col">games_scores</th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let element of gameList;let i = index">
+        <tr *ngFor="let element of gameList;let id = index">
             <td>{{ element.game_id }}</td>
             <td>{{ element.start_time }}</td>
             <td>{{ element.end_time }}</td>
@@ -25,6 +26,7 @@
             <td>{{ element.scoring_type }}</td>
             <td>{{ element.team_type }}</td>
             <td>{{ element.mods }}</td>
+            <td><a [routerLink]="[id, 'score']">List in {{ element.game_id }}</a></td>
         </tr>
     </tbody>
 </table>
