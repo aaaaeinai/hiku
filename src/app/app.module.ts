@@ -21,6 +21,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { GameListComponent } from './component/match/game-list/game-list.component';
 import { ScoresService } from './container/service/score.service';
 import { FooterComponent } from './component/footer/footer.component';
+import { GameScoresComponent } from './component/match/game-list/game-scores/game-scores.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { FooterComponent } from './component/footer/footer.component';
     UserRecentListComponent,
     HeaderComponent,
     GameListComponent,
-    FooterComponent
+    FooterComponent,
+    GameScoresComponent
   ],
   imports: [
     BrowserModule,

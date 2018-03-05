@@ -8,6 +8,7 @@ import { UserListComponent } from "../../component/user/user-list/user-list.comp
 import { UserBestListComponent } from "../../component/user-best/user-best-list/user-best-list.component";
 import { UserRecentListComponent } from "../../component/user-recent/user-recent-list/user-recent-list.component";
 import { GameListComponent } from "../../component/match/game-list/game-list.component";
+import { GameScoresComponent } from "../../component/match/game-list/game-scores/game-scores.component";
 
 const appRoutes: Routes = [
     {
@@ -28,6 +29,10 @@ const appRoutes: Routes = [
     {
         path: 'match/:id/game',
         component: GameListComponent,
+    },
+    {
+        path: 'match/:match_id/game/:game_id/score',
+        component: GameScoresComponent,
     },
     {
         path: 'score',
