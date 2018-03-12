@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
-import { Match, Game } from "../model/match";
+import { Match, Game, GamesScore } from "../model/match";
 import { Observable } from 'rxjs/Observable';
 import { OSU_API, MATCHES } from "./links-const";
 import { KEY } from "./key";
@@ -13,13 +13,13 @@ export class MatchesService {
         private http: HttpClient
     ) { }
 
-    getMatches(data: (matches: Match[]) => void) {
-        return this.http.get(OSU_API + MATCHES + '?k=' + KEY)
-            .subscribe(data)
+    getMatches = (data: (matches: Match[]) => void) => {
+        this.http.get(OSU_API + MATCHES + '?k=' + KEY)
+        .subscribe(data)
     }
 
-    getGames(data: (matches: Match[]) => void) {
-        return this.http.get(OSU_API + MATCHES + '?k=' + KEY)
-            .subscribe(data)
-    }
+    getGames = this.getMatches
+
+    getGamesScores = this.getMatches
+
 }
