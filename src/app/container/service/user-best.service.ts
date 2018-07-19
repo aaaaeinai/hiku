@@ -7,11 +7,13 @@ import { UserBest } from '../model/user-best';
 
 @Injectable()
 export class UserBestsService {
-  results = [];
+    results = [];
 
-  constructor(private http: HttpClient) {}
+    constructor(private http: HttpClient) {}
 
-  getUserBests(data: (user_best: UserBest[]) => void) {
-    return this.http.get(OSU_API + USER_BESTS + '?k=' + KEY).subscribe(data);
-  }
+    getUserBests(data: (user_best: UserBest[]) => void) {
+        return this.http
+            .get(OSU_API + USER_BESTS + '?k=' + KEY)
+            .subscribe(data);
+    }
 }

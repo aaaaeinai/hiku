@@ -1,6 +1,7 @@
 # hiku
 
 [![Build Status](https://travis-ci.org/aaaaeinai/hiku.svg?branch=edge2)](https://travis-ci.org/aaaaeinai/hiku)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 pull up thot
 
