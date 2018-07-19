@@ -3,7 +3,7 @@ export class Match {
         private match_match_id: string,
         private match_name: string,
         private match_start_time: string,
-        
+
         // not supported yet - always null
         private match_end_time: null
     ) { }

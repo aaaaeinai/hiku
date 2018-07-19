@@ -9,7 +9,7 @@ export class UserBest {
         private countmiss: string,
         private countkatu: string,
         private countgeki: string,
-        
+
         // 1 = maximum combo of map reached, 0 otherwise
         private perfect: string,
 

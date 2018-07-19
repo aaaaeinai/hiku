@@ -39,7 +39,7 @@ export class Beatmap {
         private hit_length: string,
 
         private source: string,
-        
+
         // 0 = any, 1 = unspecified, 2 = video game, 3 = anime, 4 = rock, 5 = pop, 6 = other, 7 = novelty, 9 = hip hop, 10 = electronic (note that there's no 8)
         private genre_id: string,
 
