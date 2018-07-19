@@ -22,6 +22,7 @@ import { GameListComponent } from './component/match/game-list/game-list.compone
 import { ScoresService } from './container/service/score.service';
 import { FooterComponent } from './component/footer/footer.component';
 import { GameScoresComponent } from './component/match/game-list/game-scores/game-scores.component';
+import { AccountDetailComponent } from './component/account/account-detail/account-detail.component';
 
 @NgModule({
     declarations: [
@@ -37,6 +38,7 @@ import { GameScoresComponent } from './component/match/game-list/game-scores/gam
         GameListComponent,
         FooterComponent,
         GameScoresComponent,
+        AccountDetailComponent,
     ],
     imports: [
         BrowserModule,

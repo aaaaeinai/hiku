@@ -9,10 +9,22 @@ import { UserBestListComponent } from '../../component/user-best/user-best-list/
 import { UserRecentListComponent } from '../../component/user-recent/user-recent-list/user-recent-list.component';
 import { GameListComponent } from '../../component/match/game-list/game-list.component';
 import { GameScoresComponent } from '../../component/match/game-list/game-scores/game-scores.component';
+import { AccountDetailComponent } from '../../component/account/account-detail/account-detail.component';
 
 const appRoutes: Routes = [
     {
         path: '',
+        pathMatch: 'full',
+        component: AccountDetailComponent,
+        children: [
+            {
+                path: 'account',
+                component: BeatmapDetailComponent,
+            },
+        ],
+    },
+    {
+        path: 'beatmap' || 'beatmaps',
         component: BeatmapListComponent,
         children: [
             {
@@ -20,7 +32,6 @@ const appRoutes: Routes = [
                 component: BeatmapDetailComponent,
             },
         ],
-        pathMatch: 'full',
     },
     {
         path: 'match',
