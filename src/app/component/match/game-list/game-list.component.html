@@ -26,7 +26,9 @@
             <td>{{ element.scoring_type }}</td>
             <td>{{ element.team_type }}</td>
             <td>{{ element.mods }}</td>
-            <td><a [routerLink]="[id, 'score']">List in {{ element.game_id }}</a></td>
+            <td>
+                <a [routerLink]="[id, 'score']">List in {{ element.game_id }}</a>
+            </td>
         </tr>
     </tbody>
 </table>

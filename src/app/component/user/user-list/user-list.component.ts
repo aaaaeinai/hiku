@@ -1,6 +1,6 @@
-import { Component } from "@angular/core";
-import { User } from "../../../container/model/user";
-import { UsersService } from "../../../container/service/user.service";
+import { Component } from '@angular/core';
+import { User } from '../../../container/model/user';
+import { UsersService } from '../../../container/service/user.service';
 
 @Component({
     selector: 'app-user-list',
@@ -57,15 +57,12 @@ import { UsersService } from "../../../container/service/user.service";
             </tr>
         </tbody>
     </table>
-    `
+    `,
 })
 export class UserListComponent {
-    
-    userList: User[]
-    
-    constructor(
-        private us: UsersService
-    ) {
-        this.us.getUsers(userList => this.userList = userList)
+    userList: User[];
+
+    constructor(private us: UsersService) {
+        this.us.getUsers(userList => (this.userList = userList));
     }
 }

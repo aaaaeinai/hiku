@@ -1,20 +1,17 @@
-import { KEY } from "./key";
-import { Beatmap } from "../model/beatmap";
+import { KEY } from './key';
+import { Beatmap } from '../model/beatmap';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { OSU_API, BEATMAPS } from "./links-const";
+import { OSU_API, BEATMAPS } from './links-const';
 
 @Injectable()
 export class BeatmapsService {
-    results = []
+    results = [];
 
-    constructor(
-        private http: HttpClient
-    ) { }
+    constructor(private http: HttpClient) {}
 
     getBeatmaps(data: (beatmaps: Beatmap[]) => void) {
-        return this.http.get(OSU_API + BEATMAPS + '?k=' + KEY)
-            .subscribe(data)
+        return this.http.get(OSU_API + BEATMAPS + '?k=' + KEY).subscribe(data);
     }
 }

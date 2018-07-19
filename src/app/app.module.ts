@@ -24,34 +24,34 @@ import { FooterComponent } from './component/footer/footer.component';
 import { GameScoresComponent } from './component/match/game-list/game-scores/game-scores.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    BeatmapDetailComponent,
-    BeatmapListComponent,
-    MatchListComponent,
-    ScoreListComponent,
-    UserListComponent,
-    UserBestListComponent,
-    UserRecentListComponent,
-    HeaderComponent,
-    GameListComponent,
-    FooterComponent,
-    GameScoresComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    AppRoutingModule
-  ],
-  providers: [
-    BeatmapsService,
-    MatchesService,
-    ScoresService,
-    UserBestsService,
-    UserRecentsService,
-    UsersService
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        BeatmapDetailComponent,
+        BeatmapListComponent,
+        MatchListComponent,
+        ScoreListComponent,
+        UserListComponent,
+        UserBestListComponent,
+        UserRecentListComponent,
+        HeaderComponent,
+        GameListComponent,
+        FooterComponent,
+        GameScoresComponent,
+    ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        AppRoutingModule,
+    ],
+    providers: [
+        BeatmapsService,
+        MatchesService,
+        ScoresService,
+        UserBestsService,
+        UserRecentsService,
+        UsersService,
+    ],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,6 +1,6 @@
-import { Component } from "@angular/core";
-import { UserRecent } from "../../../container/model/user-recent";
-import { UserRecentsService } from "../../../container/service/user-recent.service";
+import { Component } from '@angular/core';
+import { UserRecent } from '../../../container/model/user-recent';
+import { UserRecentsService } from '../../../container/service/user-recent.service';
 
 @Component({
     selector: 'app-export-list',
@@ -45,15 +45,14 @@ import { UserRecentsService } from "../../../container/service/user-recent.servi
             </tr>
         </tbody>
     </table>
-    `
+    `,
 })
 export class UserRecentListComponent {
+    userRecentList: UserRecent[];
 
-    userRecentList: UserRecent[]
-
-    constructor(
-        private urs: UserRecentsService
-    ) {
-        this.urs.getUserRecents(userRecentList => this.userRecentList = userRecentList)
+    constructor(private urs: UserRecentsService) {
+        this.urs.getUserRecents(
+            userRecentList => (this.userRecentList = userRecentList),
+        );
     }
 }

@@ -1,6 +1,6 @@
-import { Component } from "@angular/core";
-import { UserBest } from "../../../container/model/user-best";
-import { UserBestsService } from "../../../container/service/user-best.service";
+import { Component } from '@angular/core';
+import { UserBest } from '../../../container/model/user-best';
+import { UserBestsService } from '../../../container/service/user-best.service';
 
 @Component({
     selector: 'app-score-list',
@@ -47,15 +47,14 @@ import { UserBestsService } from "../../../container/service/user-best.service";
             </tr>
         </tbody>
     </table>
-    `
+    `,
 })
 export class UserBestListComponent {
-    
-    userBestList: UserBest[]
-    
-    constructor(
-        private ubs: UserBestsService
-    ) {
-        this.ubs.getUserBests(userBestList => this.userBestList = userBestList)
+    userBestList: UserBest[];
+
+    constructor(private ubs: UserBestsService) {
+        this.ubs.getUserBests(
+            userBestList => (this.userBestList = userBestList),
+        );
     }
 }

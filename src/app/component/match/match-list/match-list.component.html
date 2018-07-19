@@ -16,7 +16,9 @@
             <td>{{ element.match.match_name }}</td>
             <td>{{ element.match.match_start_time }}</td>
             <td>{{ element.match.match_end_time }}</td>
-            <td><a [routerLink]="['/match', id, 'game']">List in {{ element.match.match_match_id }}</a></td>
+            <td>
+                <a [routerLink]="['/match', id, 'game']">List in {{ element.match.match_match_id }}</a>
+            </td>
         </tr>
     </tbody>
 </table>

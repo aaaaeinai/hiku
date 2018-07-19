@@ -1,14 +1,14 @@
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BeatmapListComponent } from "../../component/beatmap/beatmap-list/beatmap-list.component";
-import { BeatmapDetailComponent } from "../../component/beatmap/beatmap-detail/beatmap-detail.component";
-import { MatchListComponent } from "../../component/match/match-list/match-list.component";
-import { ScoreListComponent } from "../../component/score/score-list/score-list.component";
-import { UserListComponent } from "../../component/user/user-list/user-list.component";
-import { UserBestListComponent } from "../../component/user-best/user-best-list/user-best-list.component";
-import { UserRecentListComponent } from "../../component/user-recent/user-recent-list/user-recent-list.component";
-import { GameListComponent } from "../../component/match/game-list/game-list.component";
-import { GameScoresComponent } from "../../component/match/game-list/game-scores/game-scores.component";
+import { BeatmapListComponent } from '../../component/beatmap/beatmap-list/beatmap-list.component';
+import { BeatmapDetailComponent } from '../../component/beatmap/beatmap-detail/beatmap-detail.component';
+import { MatchListComponent } from '../../component/match/match-list/match-list.component';
+import { ScoreListComponent } from '../../component/score/score-list/score-list.component';
+import { UserListComponent } from '../../component/user/user-list/user-list.component';
+import { UserBestListComponent } from '../../component/user-best/user-best-list/user-best-list.component';
+import { UserRecentListComponent } from '../../component/user-recent/user-recent-list/user-recent-list.component';
+import { GameListComponent } from '../../component/match/game-list/game-list.component';
+import { GameScoresComponent } from '../../component/match/game-list/game-scores/game-scores.component';
 
 const appRoutes: Routes = [
     {
@@ -17,10 +17,10 @@ const appRoutes: Routes = [
         children: [
             {
                 path: 'details',
-                component: BeatmapDetailComponent
-            }
+                component: BeatmapDetailComponent,
+            },
         ],
-        pathMatch: 'full'
+        pathMatch: 'full',
     },
     {
         path: 'match',
@@ -36,31 +36,29 @@ const appRoutes: Routes = [
     },
     {
         path: 'score',
-        component: ScoreListComponent
+        component: ScoreListComponent,
     },
     {
         path: 'user',
-        component: UserListComponent
+        component: UserListComponent,
     },
     {
         path: 'user-best',
-        component: UserBestListComponent
+        component: UserBestListComponent,
     },
     {
         path: 'user-recent',
-        component: UserRecentListComponent
-    }
+        component: UserRecentListComponent,
+    },
 ];
 
 @NgModule({
     imports: [
         RouterModule.forRoot(
             appRoutes,
-            { enableTracing: true } // <-- debugging purposes only
-        )
+            { enableTracing: true }, // <-- debugging purposes only
+        ),
     ],
-    exports: [
-        RouterModule
-    ]
+    exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
