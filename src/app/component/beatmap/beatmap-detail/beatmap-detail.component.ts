@@ -1,6 +1,5 @@
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component } from '@angular/core';
-import { BeatmapsService } from '../../../container/service/beatmaps.service';
 
 @Component({
     selector: 'app-beatmap-detail',
