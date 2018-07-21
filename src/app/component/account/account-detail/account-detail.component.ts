@@ -9,7 +9,7 @@ import { AccountsService } from '../../../container/service/account.service';
 })
 export class AccountDetailComponent implements OnInit {
     login: FormGroup;
-    private logged = false;
+    logged = false;
 
     constructor(private accountService: AccountsService) {}
 
