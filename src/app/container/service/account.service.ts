@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { OSU_API, SCORES } from './links-const';
-import { Observable } from 'rxjs/Observable';
-import { Score } from '../model/score';
-import { KEY } from './key';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { OSU_API, BEATMAPS } from './links-const';
 
 @Injectable()
 export class AccountsService {
-    results = [];
+    private data: { apikey: string };
+    private valid = false;
 
-    constructor(private data: { apikey: string }) {}
+    constructor(private http: HttpClient) {}
+
+    get Logged() {
+        return !!this.data;
+    }
 
     getAccount() {
         return this.data;

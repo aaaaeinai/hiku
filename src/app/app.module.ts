@@ -23,6 +23,7 @@ import { ScoresService } from './container/service/score.service';
 import { FooterComponent } from './component/footer/footer.component';
 import { GameScoresComponent } from './component/match/game-list/game-scores/game-scores.component';
 import { AccountDetailComponent } from './component/account/account-detail/account-detail.component';
+import { AccountsService } from './container/service/account.service';
 
 @NgModule({
     declarations: [
@@ -53,6 +54,7 @@ import { AccountDetailComponent } from './component/account/account-detail/accou
         UserBestsService,
         UserRecentsService,
         UsersService,
+        AccountsService,
     ],
     bootstrap: [AppComponent],
 })

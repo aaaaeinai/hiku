@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {
-    FormGroup,
-    FormControl,
-} from '../../../../../node_modules/@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
+import { AccountsService } from '../../../container/service/account.service';
 
 @Component({
     selector: 'app-account-detail',
@@ -11,9 +9,9 @@ import {
 })
 export class AccountDetailComponent implements OnInit {
     login: FormGroup;
-    apikey = '';
+    private logged = false;
 
-    constructor() {}
+    constructor(private accountService: AccountsService) {}
 
     ngOnInit() {
         this.login = new FormGroup({
@@ -22,7 +20,7 @@ export class AccountDetailComponent implements OnInit {
     }
 
     onSubmit() {
-        this.apikey = JSON.stringify(this.login.value);
-        console.log(this.apikey);
+        this.accountService.setAccount(this.login.value);
+        this.logged = this.accountService.Logged;
     }
 }
