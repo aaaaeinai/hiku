@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+* {
+    font-family: $font-family-sans-serif;
+}
+
+$font-family-sans-serif:
+  // Safari for OS X and iOS (San Francisco)
+  -apple-system,
+  // Chrome < 56 for OS X (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Segoe UI",
+  // Android
+  "Roboto",
+  // Basic web fallback
+  "Helvetica Neue", Arial, sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+.bd-title {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-weight: 300;
+}
+
+.card-text {
+    font-size: 1em;
+    margin-bottom: 10px !important;
+}
+
+.card-title {
+    margin-bottom: 10px !important;
+}
+
+.card-body {
+    padding: 15px !important;
+}
+
+.list-group-item {
+    padding: 9px 15px !important;
+}

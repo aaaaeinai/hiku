@@ -1,0 +1,24 @@
+<h1 class="display-4 bd-title" id="content">Match List</h1>
+
+<table class="table table-responsive table-dark table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th scope="col">match_match_id</th>
+            <th scope="col">match_name</th>
+            <th scope="col">match_start_time</th>
+            <th scope="col">match_end_time</th>
+            <th scope="col">games</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let element of matchList;let id = index">
+            <td>{{ element.match.match_match_id }}</td>
+            <td>{{ element.match.match_name }}</td>
+            <td>{{ element.match.match_start_time }}</td>
+            <td>{{ element.match.match_end_time }}</td>
+            <td>
+                <a [routerLink]="['/match', id, 'game']">List in {{ element.match.match_match_id }}</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

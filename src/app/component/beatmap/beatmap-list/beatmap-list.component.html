@@ -1,0 +1,102 @@
+<h1 class="display-4 bd-title" id="content">Beatmap List</h1>
+
+<div class="row">
+
+    <div *ngFor="let element of beatmapList" class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card border-success" style="margin: 5px;">
+            <img class="card-img-top img-responsive" src="./../../../../assets/download.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ element.title }} - {{ element.artist }}</h5>
+                <p class="card-text">{{ element.creator }}</p>
+                <p class="card-text">{{ element.mode }}</p>
+            </div>
+
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Difficulty Rating: {{ element.difficultyrating | number:'1.0-2' }}</li>
+                <li class="list-group-item">Playcount: {{ element.playcount }}, Passcount: {{ element.passcount }}</li>
+                <li class="list-group-item">Favourite Count: {{ element.favourite_count }}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- <table class="table table-responsive table-dark table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Artist </th>
+            <th scope="col">Creator</th>
+            <th scope="col">Difficulty Rating</th>
+            <th scope="col">Playcount</th>
+            <th scope="col">Passcount</th>
+            <th scope="col">Favourite Count</th> -->
+<!--
+            <th scope="col">approved</th>
+            <th scope="col">approved_date</th>
+            <th scope="col">last_update</th>
+            <th scope="col">artist</th>
+            <th scope="col">beatmap_id</th>
+            <th scope="col">beatmapset_id</th>
+            <th scope="col">bpm</th>
+            <th scope="col">creator</th>
+            <th scope="col">difficultyrating</th>
+            <th scope="col">diff_size</th>
+            <th scope="col">diff_overall</th>
+            <th scope="col">diff_approach</th>
+            <th scope="col">diff_drain</th>
+            <th scope="col">hit_length</th>
+            <th scope="col">source</th>
+            <th scope="col">genre_id</th>
+            <th scope="col">language_id</th>
+            <th scope="col">title</th>
+            <th scope="col">total_length</th>
+            <th scope="col">version</th>
+            <th scope="col">file_md5</th>
+            <th scope="col">mode</th>
+            <th scope="col">tags</th>
+            <th scope="col">favourite_count</th>
+            <th scope="col">playcount</th>
+            <th scope="col">passcount</th> -->
+<!-- <th scope="col">max_combo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let element of beatmapList">
+            <td>{{ element.title }}</td>
+            <td>{{ element.artist }}</td>
+            <td>{{ element.creator }}</td>
+            <td>{{ element.difficultyrating | number:'1.0-2' }}</td>
+            <td>{{ element.playcount }}</td>
+            <td>{{ element.passcount }}</td>
+            <td>{{ element.favourite_count }}</td> -->
+<!--
+            <td>{{ element.approved }}</td>
+            <td>{{ element.approved_date }}</td>
+            <td>{{ element.last_update }}</td>
+            <td>{{ element.artist }}</td>
+            <td>{{ element.beatmap_id }}</td>
+            <td>{{ element.beatmapset_id }}</td>
+            <td>{{ element.bpm }}</td>
+            <td>{{ element.creator }}</td>
+            <td>{{ element.difficultyrating }}</td>
+            <td>{{ element.diff_size }}</td>
+            <td>{{ element.diff_overall }}</td>
+            <td>{{ element.diff_approach }}</td>
+            <td>{{ element.diff_drain }}</td>
+            <td>{{ element.hit_length }}</td>
+            <td>{{ element.source }}</td>
+            <td>{{ element.genre_id }}</td>
+            <td>{{ element.language_id }}</td>
+            <td>{{ element.title }}</td>
+            <td>{{ element.total_length }}</td>
+            <td>{{ element.version }}</td>
+            <td>{{ element.file_md5 }}</td>
+            <td>{{ element.mode }}</td>
+            <td>{{ element.tags }}</td>
+            <td>{{ element.favourite_count }}</td>
+            <td>{{ element.playcount }}</td>
+            <td>{{ element.passcount }}</td> -->
+<!-- <td>{{ element.max_combo }}</td>
+        </tr>
+    </tbody>
+</table> -->
