@@ -1,18 +1,27 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Match, Game, GamesScore } from '../model/match';
-import { Observable } from 'rxjs/Observable';
+import { HttpClient } from '@angular/common/http';
+import { Match } from '../model/match';
 import { OSU_API, MATCHES } from './links-const';
-import { KEY } from './key';
+import { AccountsService } from './account.service';
 
 @Injectable()
 export class MatchesService {
     results = [];
 
-    constructor(private http: HttpClient) {}
+    constructor(
+        private http: HttpClient,
+        private accountService: AccountsService,
+    ) {}
 
     getMatches = (data: (matches: Match[]) => void) => {
-        this.http.get(OSU_API + MATCHES + '?k=' + KEY).subscribe(data);
+        this.http
+            .get(
+                OSU_API +
+                    MATCHES +
+                    '?k=' +
+                    this.accountService.getAccount().apikey,
+            )
+            .subscribe(data);
     };
 
     getGames = this.getMatches;

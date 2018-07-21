@@ -1,8 +1,6 @@
-import { KEY } from './key';
 import { Beatmap } from '../model/beatmap';
-import { HttpHeaders, HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
 import { OSU_API, BEATMAPS } from './links-const';
 import { AccountsService } from './account.service';
 

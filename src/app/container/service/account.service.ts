@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { OSU_API, BEATMAPS } from './links-const';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class AccountsService {
